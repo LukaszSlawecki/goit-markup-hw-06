@@ -436,7 +436,7 @@ li {
   position: relative;
 }
 .footer-frame {
-  width: 358px;
+  width: 340px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 16px;
@@ -455,6 +455,7 @@ li {
   bottom: 0px;
   cursor: pointer;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
   /*teks guzika*/
   color: #ffffff;
   font-size: 16px;
