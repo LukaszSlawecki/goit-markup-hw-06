@@ -298,6 +298,7 @@ li {
   height: 100%;
   background-color: rgba(0 0 0 / 0.5);
   transition: 0.25s;
+  z-index: 1;
 }
 .is-hidden {
   transform: translateY(100%);
@@ -311,6 +312,7 @@ li {
   transform: translate(-50%, -50%);
   border-radius: 4px;
   background-color: #ffffff;
+  z-index: 2;
 }
 .modal-btn {
   cursor: pointer;
@@ -335,6 +337,8 @@ li {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .button-active-portfolio {
   background-color: var(--blue);
@@ -417,6 +421,71 @@ li {
   display: flex;
   flex-direction: column;
 }
+.headline {
+  width: 207px;
+  height: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+/*-----------form-footer-------------*/
+.footer-form {
+  position: relative;
+}
+.footer-frame {
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  background-color: #2f303a;
+}
+.footer-btn {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  width: 200px;
+  height: 48px;
+  background-color: var(--blue);
+  border-radius: 4px;
+  border: none;
+  left: 370px;
+  bottom: 0px;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  /*teks guzika*/
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 12px;
+}
+.footer-btn:hover {
+  opacity: 0.8;
+}
+
+.svg-send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 148px;
+  bottom: 13px;
+  display: flex;
+}
+input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+/*-----koniec-----*/
 
 .description-icon-box {
   background-color: var(--color-silver);
@@ -442,16 +511,6 @@ li {
   margin-right: 20px;
   margin-left: 20px;
   padding-top: 20px;
-  /*display: flex;
-  direction: row;
-  gap: 30px;
-  /*box-sizing: border-box;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 94px;
-  padding-bottom: 94px;*/
 }
 .client-card {
   margin-right: 30px;
@@ -520,7 +579,7 @@ li {
 .container-footer {
   margin-left: 215px;
 }
-.footer-container {
+.footer .container {
   display: flex;
   gap: 70px;
   align-items: baseline;
