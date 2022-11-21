@@ -110,9 +110,9 @@ img {
 }
 
 /* .lorem:not(:last-child) {
-  padding-right: 30px;
-}
-*/
+    padding-right: 30px;
+  }
+  */
 .lorem-heading {
   font-weight: 700;
   font-size: 14px;
@@ -552,7 +552,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   /*margin-top: 16px;
-  margin-bottom: 30px;*/
+    margin-bottom: 30px;*/
   fill: #afb1b8;
 }
 .icons-desinger:hover,
@@ -741,8 +741,10 @@ input::placeholder {
 }
 
 .icon-form {
+  width: 13px;
+  height: 13px;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 6%;
   align-items: center;
   justify-content: center;
@@ -752,6 +754,7 @@ input::placeholder {
 .input-check {
   position: relative;
   opacity: 0;
+  z-index: 2;
 }
 
 .icon-check {
@@ -761,15 +764,21 @@ input::placeholder {
   top: 10%;
   right: 97%;
   border: 1px solid #212121;
+  z-index: 3;
 }
 
 input:checked + .icon-check {
   fill: #ffffff;
   background-color: #2196f3;
+  background-image: #ffffff;
   border-color: #2196f3;
   border-radius: 2px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-check::after {
+  fill: #ffffff;
 }
 
 .terms-privacy {
